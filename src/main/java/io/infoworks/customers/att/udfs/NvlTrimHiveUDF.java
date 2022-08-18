@@ -1,6 +1,9 @@
 package io.infoworks.customers.att.udfs;
 
-public class NvlTrimHiveUDF {
+import org.apache.hadoop.hive.ql.exec.UDF;
+
+public class NvlTrimHiveUDF extends UDF {
+
   public static Object evaluate(String input, Object defaultInput) {
     if (input != null) {
       input = input.trim();

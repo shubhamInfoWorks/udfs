@@ -1,2 +1,11 @@
+io/infoworks/customers/att/udfs/NvlHiveUDF.class
+io/infoworks/customers/att/udfs/TrimOReplaceSubstring.class
+io/infoworks/customers/att/udfs/NullCheckWithAsDecimalHiveUDF.class
+io/infoworks/customers/att/udfs/NvlTrimHiveUDF.class
+io/infoworks/customers/att/udfs/CoalesceAsCharHiveUDF.class
+io/infoworks/customers/att/udfs/CoalesceHiveUDF.class
+io/infoworks/customers/att/udfs/Utils.class
+io/infoworks/customers/att/udfs/LitHiveUDF.class
+io/infoworks/customers/att/udfs/CoalesceTrimHiveUDF.class
 io/infoworks/customers/att/udfs/Test.class
 io/infoworks/customers/att/udfs/StringToTimestampHiveUDF.class
