@@ -8,7 +8,7 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class LitHiveUDF extends UDF {
 
-  public static Object evaluate(Object input) {
+  public static <T> T evaluate(T input) {
     return input;
   }
 }

@@ -5,7 +5,7 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class NullCheckWithAsDecimalHiveUDF extends UDF {
 
-  public static Object evaluate(String input) {
+  public static Double evaluate(String input) {
     if (StringUtils.isEmpty(input)) {
       return null;
     }
