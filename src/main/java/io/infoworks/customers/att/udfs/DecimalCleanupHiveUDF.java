@@ -2,6 +2,8 @@ package io.infoworks.customers.att.udfs;
 
 import java.io.Serializable;
 import java.util.function.Function;
+
+import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class DecimalCleanupHiveUDF extends UDF {
@@ -10,7 +12,11 @@ public class DecimalCleanupHiveUDF extends UDF {
     if (unTransformed == null) {
       return null;
     }
-    if (unTransformed.trim().contains("")) {
+    if(StringUtils.isEmpty(unTransformed.trim()))
+    {
+     return null;
+    }
+    if (unTransformed.trim().contains(" ")) {
       return -1.0;
     }
     if (unTransformed.matches("[a-zA-Z]+")) {

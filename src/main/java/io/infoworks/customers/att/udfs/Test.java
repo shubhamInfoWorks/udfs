@@ -10,6 +10,7 @@ public class Test {
 
 
 //    System.out.println(LitHiveUDF.evaluate(input));
-    System.out.println(TrimOReplaceSubstringHiveUDF.evaluate(input, 30, "", ""));
+    //System.out.println(TrimOReplaceSubstringHiveUDF.evaluate(input, 30, "", ""));
+    System.out.println(DecimalCleanupHiveUDF.evaluate(" "));
   }
 }
