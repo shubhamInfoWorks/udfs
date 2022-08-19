@@ -12,6 +12,8 @@ public class DecimalCleanupHiveUDF extends UDF {
     if (unTransformed == null) {
       return null;
     }
+    //added this check to see if the string is empty and then return null
+
     if(StringUtils.isEmpty(unTransformed.trim()))
     {
      return null;
