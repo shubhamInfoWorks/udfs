@@ -10,7 +10,7 @@ public class DecimalCleanupHiveUDF extends UDF {
     if (unTransformed == null) {
       return null;
     }
-    if (unTransformed.trim().contains(" ")) {
+    if (unTransformed.trim().contains("")) {
       return -1.0;
     }
     if (unTransformed.matches("[a-zA-Z]+")) {
