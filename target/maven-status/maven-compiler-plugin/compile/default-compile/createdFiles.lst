@@ -10,9 +10,12 @@ io/infoworks/customers/att/transformers/DecimalCleanup.class
 io/infoworks/customers/att/udfs/Test.class
 io/infoworks/customers/att/udfs/StringToTimestampHiveUDF.class
 io/infoworks/customers/att/transformers/StringTrimmer.class
+io/infoworks/customers/att/udfs/TimestampTransformerHiveUDF.class
 io/infoworks/customers/att/udfs/NvlHiveUDF.class
 io/infoworks/customers/att/udfs/NullCheckWithAsDecimalHiveUDF.class
 io/infoworks/customers/att/udfs/SubstringHiveUDF.class
 io/infoworks/customers/att/transformers/TimestampTransformer.class
+io/infoworks/customers/att/udfs/NonASCIICleanupHiveUDF.class
 io/infoworks/customers/att/udfs/Utils.class
+io/infoworks/customers/att/udfs/DecimalCleanupHiveUDF.class
 io/infoworks/customers/att/transformers/NonASCIICleanup.class
