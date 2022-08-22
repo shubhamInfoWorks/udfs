@@ -5,6 +5,8 @@ io/infoworks/customers/att/udfs/CoalesceAsCharHiveUDF.class
 io/infoworks/customers/att/udfs/CoalesceHiveUDF.class
 io/infoworks/customers/att/udfs/LitHiveUDF.class
 io/infoworks/customers/att/udfs/TrimOReplaceSubstringHiveUDF.class
+io/infoworks/customers/att/udfs/CoalesceCastToTimestamp0.class
+io/infoworks/customers/att/udfs/CastStringToTimestamp0.class
 io/infoworks/customers/att/udfs/CoalesceTrimHiveUDF.class
 io/infoworks/customers/att/transformers/DecimalCleanup.class
 io/infoworks/customers/att/udfs/Test.class
