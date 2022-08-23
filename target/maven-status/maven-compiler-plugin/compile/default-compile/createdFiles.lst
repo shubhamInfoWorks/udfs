@@ -15,7 +15,7 @@ io/infoworks/customers/att/udfs/TimestampTransformerHiveUDF.class
 io/infoworks/customers/att/udfs/NvlHiveUDF.class
 io/infoworks/customers/att/udfs/NullCheckWithAsDecimalHiveUDF.class
 io/infoworks/customers/att/transformers/TimestampTransformer.class
-io/infoworks/customers/att/udfs/NonASCIICleanupHiveUDF.class
+io/infoworks/customers/att/udfs/TrimRegexp_replaceHiveUDF.class
 io/infoworks/customers/att/udfs/Utils.class
 io/infoworks/customers/att/udfs/SubstrHiveUDF.class
 io/infoworks/customers/att/udfs/TrimOreplaceSubstrHiveUDF.class

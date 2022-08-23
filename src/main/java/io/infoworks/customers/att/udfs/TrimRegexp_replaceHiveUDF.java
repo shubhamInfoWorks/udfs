@@ -6,7 +6,7 @@ import org.datanucleus.util.StringUtils;
 public class TrimRegexp_replaceHiveUDF extends UDF {
 
 
-  public static String evaluate(String unTransformed) {
+  public static String evaluate(String unTransformed, String param1, String param2) {
     if (unTransformed == null) {
       return null;
     }
