@@ -1,8 +1,10 @@
 package io.infoworks.customers.att.udfs;
 
-public class NvlHiveUDF {
+import org.apache.hadoop.hive.ql.exec.UDF;
 
-  public static <T> T evaluate(T input, T defaultInput) {
+public class NvlHiveUDF extends UDF {
+
+  public static String evaluate(String input, String defaultInput) {
     if (input != null) {
       return input;
     }
