@@ -20,8 +20,10 @@ public class Test {
      // System.out.println(CastStringToTimestamp0.evaluate("2022-10-20 00:00:56"));
      // System.out.println(StringToTimestampHiveUDF.evaluate(input2));
 
-      System.out.println(CoalesceCastToTimestamp0.evaluate("2022-10-20 00:00:56"));
-      System.out.println(CoalesceCastToTimestamp0.evaluate(null));
-      System.out.println(CoalesceCastToTimestamp0.evaluate(""));
+      System.out.println(TrimRegexp_replaceHiveUDF.evaluate("日本人 中國的 ~=[]()%+{}@","[^\\x00-\\x7F]","AA"));
+
+     // System.out.println(CoalesceCastToTimestamp0.evaluate("2022-10-20 00:00:56"));
+      //System.out.println(CoalesceCastToTimestamp0.evaluate(null));
+      //System.out.println(CoalesceCastToTimestamp0.evaluate(""));
   }
 }

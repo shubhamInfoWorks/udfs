@@ -15,7 +15,7 @@ public class TrimRegexp_replaceHiveUDF extends UDF {
     {
       return null;
     }
-    String transformed = unTransformed.replaceAll("[^\\x00-\\x7F]", "");
+    String transformed = unTransformed.replaceAll(param1, param2);
     return transformed;
   }
 }
