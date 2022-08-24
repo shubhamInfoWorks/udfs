@@ -20,10 +20,15 @@ public class Test {
      // System.out.println(CastStringToTimestamp0.evaluate("2022-10-20 00:00:56"));
      // System.out.println(StringToTimestampHiveUDF.evaluate(input2));
 
-      System.out.println(TrimRegexp_replaceHiveUDF.evaluate("日本人 中國的 ~=[]()%+{}@","[^\\x00-\\x7F]","AA"));
+      //System.out.println(TrimRegexp_replaceHiveUDF.evaluate("日本人 中國的 ~=[]()%+{}@","[^\\x00-\\x7F]","AA"));
 
+     // System.out.println(NullIFHiveUDF.evaluate("","ADITYA"));
+//System.out.println(CoalesceNullIF.evaluate("ADITYA","ADITYA","Latest"));
+      //System.out.println(CastNUllIFtoTimestamp0.evaluate("2012/10/04","","yyyy/MM/dd"));
      // System.out.println(CoalesceCastToTimestamp0.evaluate("2022-10-20 00:00:56"));
       //System.out.println(CoalesceCastToTimestamp0.evaluate(null));
       //System.out.println(CoalesceCastToTimestamp0.evaluate(""));
+
+    System.out.println(StringtoDate.evaluate("2012/10/09","yyyy/MM/dd"));
   }
 }

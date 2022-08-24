@@ -1,9 +1,9 @@
 io/infoworks/customers/att/transformers/SubstringTransformer.class
+io/infoworks/customers/att/udfs/LitStringHiveUDF.class
 io/infoworks/customers/att/udfs/NvlTrimHiveUDF.class
 io/infoworks/customers/att/udfs/TrimHiveUDF.class
 io/infoworks/customers/att/udfs/CoalesceAsCharHiveUDF.class
 io/infoworks/customers/att/udfs/CoalesceHiveUDF.class
-io/infoworks/customers/att/udfs/LitHiveUDF.class
 io/infoworks/customers/att/udfs/CoalesceCastToTimestamp0.class
 io/infoworks/customers/att/udfs/CastStringToTimestamp0.class
 io/infoworks/customers/att/udfs/CoalesceTrimHiveUDF.class
@@ -18,6 +18,7 @@ io/infoworks/customers/att/transformers/TimestampTransformer.class
 io/infoworks/customers/att/udfs/TrimRegexp_replaceHiveUDF.class
 io/infoworks/customers/att/udfs/Utils.class
 io/infoworks/customers/att/udfs/SubstrHiveUDF.class
+io/infoworks/customers/att/udfs/LitIntegerHiveUDF.class
 io/infoworks/customers/att/udfs/TrimOreplaceSubstrHiveUDF.class
 io/infoworks/customers/att/udfs/DecimalCleanupHiveUDF.class
 io/infoworks/customers/att/transformers/NonASCIICleanup.class
