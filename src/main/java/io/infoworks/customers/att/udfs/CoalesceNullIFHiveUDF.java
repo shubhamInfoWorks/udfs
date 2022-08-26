@@ -1,9 +1,8 @@
 package io.infoworks.customers.att.udfs;
 
-import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
-public class CoalesceNullIF extends UDF {
+public class CoalesceNullIFHiveUDF extends UDF {
 
     public static String evaluate(String input, String secondexpression, String defaultinput) {
 

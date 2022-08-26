@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat;
 
 
 
-public class CastNUllIFtoTimestamp0 {
+public class CastNUllIFtoTimestamp0HiveUDF {
 
     public static Timestamp evaluate(String input, String secondexpression,String timestampformat) throws ParseException {
 
