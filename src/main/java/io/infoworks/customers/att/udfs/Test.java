@@ -33,7 +33,8 @@ public class Test {
 
     //System.out.println(StringtoDate.evaluate("2012/10/09","yyyy/MM/dd"));
 
+    System.out.println(SysdatetoDateFormatHiveUDF.evaluate(Calendar.getInstance().getTime()));
     System.out.println(SysdatetoIntHiveUDF.evaluate(Calendar.getInstance().getTime()));
-    System.out.println(Calendar.getInstance().getTime());
+   // System.out.println(Calendar.getInstance().getTime());
   }
 }
