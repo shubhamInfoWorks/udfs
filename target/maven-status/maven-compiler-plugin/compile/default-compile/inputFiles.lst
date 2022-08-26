@@ -11,6 +11,7 @@
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/NullCheckWithAsDecimalHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/TimestampTransformerHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/LitIntegerHiveUDF.java
+/Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/SysdatetoDateFormatHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/transformers/SubstringTransformer.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/TrimHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/NvlTrimHiveUDF.java

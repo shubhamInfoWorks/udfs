@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class SysdatetoDateFormatHiveUDF extends UDF {
 
-    public static Object evaluate(Date input)
+    public static Object evaluate(Date input, String format)
     {
         if(input==null)
 
@@ -17,7 +17,7 @@ public class SysdatetoDateFormatHiveUDF extends UDF {
         }
 
         Date date = Calendar.getInstance().getTime();
-        DateFormat dateFormat = new SimpleDateFormat("YYYY/MM/dd");
+        DateFormat dateFormat = new SimpleDateFormat(format);
         return dateFormat.format(date);
 
 

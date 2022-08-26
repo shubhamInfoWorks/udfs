@@ -20,6 +20,7 @@ io/infoworks/customers/att/udfs/CoalesceHiveUDF.class
 io/infoworks/customers/att/udfs/CoalesceTrimHiveUDF.class
 io/infoworks/customers/att/udfs/Test.class
 io/infoworks/customers/att/udfs/TimestampTransformerHiveUDF.class
+io/infoworks/customers/att/udfs/SysdatetoDateFormatHiveUDF.class
 io/infoworks/customers/att/udfs/CoalesceCastToTimestamp0HiveUDF.class
 io/infoworks/customers/att/transformers/TimestampTransformer.class
 io/infoworks/customers/att/udfs/CoalesceNullIFHiveUDF.class
