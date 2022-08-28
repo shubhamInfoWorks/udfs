@@ -1,4 +1,3 @@
-io/infoworks/customers/att/udfs/StringtoDateHiveUDF.class
 io/infoworks/customers/att/udfs/TrimHiveUDF.class
 io/infoworks/customers/att/udfs/SysdatetoIntHiveUDF.class
 io/infoworks/customers/att/udfs/CoalesceAsCharHiveUDF.class
@@ -17,6 +16,7 @@ io/infoworks/customers/att/transformers/SubstringTransformer.class
 io/infoworks/customers/att/udfs/LitStringHiveUDF.class
 io/infoworks/customers/att/udfs/NvlTrimHiveUDF.class
 io/infoworks/customers/att/udfs/CoalesceHiveUDF.class
+io/infoworks/customers/att/udfs/StringtoDateFormatHiveUDF.class
 io/infoworks/customers/att/udfs/CoalesceTrimHiveUDF.class
 io/infoworks/customers/att/udfs/Test.class
 io/infoworks/customers/att/udfs/TimestampTransformerHiveUDF.class

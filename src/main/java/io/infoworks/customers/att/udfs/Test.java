@@ -1,7 +1,6 @@
 package io.infoworks.customers.att.udfs;
 
 import java.text.ParseException;
-import java.util.Calendar;
 
 public class Test {
 
@@ -32,10 +31,14 @@ public class Test {
 
     //System.out.println(StringtoDate.evaluate("2012/10/09","yyyy/MM/dd"));
 
-   System.out.println(SysdatetoDateFormatHiveUDF.evaluate(Calendar.getInstance().getTime(), "YYYY/MM/dd"));
+   //System.out.println(SysdatetoDateFormatHiveUDF.evaluate(Calendar.getInstance().getTime(), "YYYY/MM/dd"));
     //System.out.println(SysdatetoIntHiveUDF.evaluate(Calendar.getInstance().getTime()));
 
-    System.out.println(StringtoDateFormatHiveUDF.evaluate("20220907","yyyyDDmm"));
+    //System.out.println(StringtoDateFormatHiveUDF.evaluate("20220907","yyyyDDmm"));
+   // System.out.println(divide.evaluate(26789,10000));
+
+//System.out.println(caswhen_multiplethen_HiveUDF.evaluate("J"));
+    System.out.println((CastStringToTimestampFormatHiveUDF.evaluate("2021/05/04 23:45:30.05","yyyy/MM/dd HH:mm:ss.SSS")));
 
    // System.out.println(Calendar.getInstance().getTime());
   }

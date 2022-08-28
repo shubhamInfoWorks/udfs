@@ -2,7 +2,6 @@
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/CoalesceTrimHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/CastStringToTimestamp0HiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/CastNUllIFtoTimestamp0HiveUDF.java
-/Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/StringtoDateHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/NvlHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/CoalesceNullIFHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/StringToTimestampHiveUDF.java
@@ -28,3 +27,4 @@
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/LitStringHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/transformers/NonASCIICleanup.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/NullIFHiveUDF.java
+/Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/StringtoDateFormatHiveUDF.java
