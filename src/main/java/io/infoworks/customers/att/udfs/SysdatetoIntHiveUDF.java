@@ -10,7 +10,7 @@ import java.util.Calendar;
 
 
 public class SysdatetoIntHiveUDF extends UDF{
-public static Object evaluate (Date input) throws ParseException {
+public static Integer evaluate (Date input) throws ParseException {
     if(input==null)
 
     {
