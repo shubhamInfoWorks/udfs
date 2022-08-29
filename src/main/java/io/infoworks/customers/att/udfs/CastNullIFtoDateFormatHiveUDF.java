@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import org.apache.commons.lang.StringUtils;
 
 public class CastNullIFtoDateFormatHiveUDF {
-  public static Object evaluate(String input, String secondexpression,String dateformat) throws ParseException {
+  public static String evaluate(String input, String secondexpression,String dateformat) throws ParseException {
 
     if (StringUtils.isEmpty(input)) {
       return null;

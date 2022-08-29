@@ -7,18 +7,17 @@ import org.apache.commons.lang.StringUtils;
 
 public class ReturnZeroIfParamsEqualHiveUDF {
 
-  public static Object evaluate(Integer input,Integer secondexpression, String dateformat)
+  public static Integer evaluate(Integer input,Integer secondInteger, String dateformat)
       throws ParseException {
     if (input == null) {
       return 0;
     }
-    if(input.equals(secondexpression))
+    if(input.equals(secondInteger))
     {
       return 0;
     }
 
-    DateFormat dateFormat = new SimpleDateFormat(dateformat);
-    return dateFormat.format(new SimpleDateFormat(dateformat).parse(String.valueOf(input)).getTime());
+    return input;
 
   }
 

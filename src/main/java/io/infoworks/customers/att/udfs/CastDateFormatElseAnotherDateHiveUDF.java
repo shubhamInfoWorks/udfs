@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import org.apache.commons.lang3.StringUtils;
 
 public class CastDateFormatElseAnotherDateHiveUDF {
-  public static Object evaluate(String input, String secondString, String secondDate, String dateformat) throws ParseException {
+  public static String evaluate(String input, String secondString, String secondDate, String dateformat) throws ParseException {
 
     DateFormat dateFormat = new SimpleDateFormat(dateformat);
 
