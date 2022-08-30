@@ -14,7 +14,7 @@ public class CastDateFormatElseAnotherDateHiveUDF {
       return null;
     }
 
-    if (input.equals(secondString)) {
+    if (!input.equals(secondString)) {
       return dateFormat.format(new SimpleDateFormat(dateformat).parse(input).getTime());
     }
 
