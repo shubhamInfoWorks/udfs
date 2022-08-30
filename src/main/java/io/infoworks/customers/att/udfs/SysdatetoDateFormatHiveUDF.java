@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class SysdatetoDateFormatHiveUDF extends UDF {
 
-    public static Object evaluate(Date input, String format)
+    public static String evaluate(Date input, String format)
     {
         if(input==null)
 

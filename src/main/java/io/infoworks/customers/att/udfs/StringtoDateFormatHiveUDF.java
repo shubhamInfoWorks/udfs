@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 
 public class StringtoDateFormatHiveUDF extends UDF{
 
-    public static Object evaluate(String input, String dateformat) throws ParseException {
+    public static String evaluate(String input, String dateformat) throws ParseException {
 
         if(input.isEmpty())
 
