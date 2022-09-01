@@ -3,10 +3,12 @@ package io.infoworks.customers.att.udfs;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import org.apache.commons.lang3.StringUtils;
 
 public class CastDateFormatElseAnotherDateHiveUDF {
-  public static String evaluate(String input, String secondString, String secondDate, String dateformat) throws ParseException {
+  public static LocalDate evaluate(String input, String secondString, String secondDate, String dateformat) throws ParseException {
 
     DateFormat dateFormat = new SimpleDateFormat(dateformat);
 
@@ -15,10 +17,10 @@ public class CastDateFormatElseAnotherDateHiveUDF {
     }
 
     if (!input.equals(secondString)) {
-      return dateFormat.format(new SimpleDateFormat(dateformat).parse(input).getTime());
+      return LocalDate.parse(input, DateTimeFormatter.ofPattern(dateformat));
     }
 
-    return dateFormat.format(new SimpleDateFormat(dateformat).parse(secondDate).getTime());
+    return LocalDate.parse(secondDate, DateTimeFormatter.ofPattern(dateformat));
 
   }
 

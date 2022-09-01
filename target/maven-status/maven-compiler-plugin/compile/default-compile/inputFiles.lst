@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/DecimalCleanupHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/CoalesceTrimHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/CastNullIFtoDateFormatHiveUDF.java
@@ -35,3 +36,41 @@
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/NullIFHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/CastStringToTimestampFormatHiveUDF.java
 /Users/infoworks/Documents/udfs/src/main/java/io/infoworks/customers/att/udfs/StringtoDateFormatHiveUDF.java
+=======
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/NvlHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/LitStringHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/LitIntegerHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/CastReturnCurrentTimestampIfNullElseGivenTimestampHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/SysdatetoDateFormatHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/CoalesceNullIFHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/transformers/TimestampTransformer.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/SysdatetoIntHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/DecimalCleanupHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/TrimHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/Utils.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/TrimOreplaceSubstrHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/CastDateFormatElseAnotherDateHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/transformers/DecimalCleanup.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/transformers/StringTrimmer.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/ReturnZeroIfParamsEqualHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/transformers/SubstringTransformer.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/CastNullIFtoDateFormatHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/CoalesceHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/CoalesceTrimHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/Test.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/StringToTimestampHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/caswhen_multiplethen_HiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/NullCheckWithAsDecimalHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/TimestampTransformerHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/NullIFHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/divideHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/CastStringToTimestampFormatHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/NvlTrimHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/transformers/NonASCIICleanup.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/CastNUllIFtoTimestamp0HiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/CoalesceCastToTimestamp0HiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/StringtoDateFormatHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/CoalesceAsCharHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/TrimRegexp_replaceHiveUDF.java
+/Users/infoworks/Documents/work/udfs/src/main/java/io/infoworks/customers/att/udfs/SubstrHiveUDF.java
+>>>>>>> 77010c97a30bc798f258ee593f5f3c804e9d24bf
