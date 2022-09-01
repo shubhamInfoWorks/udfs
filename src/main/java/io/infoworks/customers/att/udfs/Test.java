@@ -38,8 +38,12 @@ public class Test {
    // System.out.println(divide.evaluate(26789,10000));
 
 //System.out.println(caswhen_multiplethen_HiveUDF.evaluate("J"));
-    System.out.println((CastStringToTimestampFormatHiveUDF.evaluate("2021/05/04 23:45:30.05","yyyy/MM/dd HH:mm:ss.SSS")));
+    //System.out.println((CastStringToTimestampFormatHiveUDF.evaluate("2021/05/04 23:45:30.05","yyyy/MM/dd HH:mm:ss.SSS")));
 
    // System.out.println(Calendar.getInstance().getTime());
+
+    //System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("20210504","~","yyyyMMdd"));
+
+    System.out.println(SubstrCharlengthTrimTrailHiveUDF.evaluate("abcde      ",1));
   }
 }
