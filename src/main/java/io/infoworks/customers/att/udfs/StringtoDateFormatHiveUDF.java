@@ -1,4 +1,6 @@
 package io.infoworks.customers.att.udfs;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
 
@@ -7,8 +9,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 public class StringtoDateFormatHiveUDF extends UDF{
-
-    public static String evaluate(String input, String dateformat) throws ParseException {
+    public static LocalDate evaluate(String input, String dateformat) throws ParseException {
 
         if(input.isEmpty())
 
@@ -18,7 +19,7 @@ public class StringtoDateFormatHiveUDF extends UDF{
         }
 
         DateFormat dateFormat = new SimpleDateFormat(dateformat);
-        return dateFormat.format(new SimpleDateFormat(dateformat).parse(input));
+        return LocalDate.parse(input, DateTimeFormatter.ofPattern(dateformat));
 
     }
 }

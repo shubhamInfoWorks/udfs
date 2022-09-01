@@ -1,4 +1,6 @@
 package io.infoworks.customers.att.udfs;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
 import java.text.DateFormat;
@@ -8,7 +10,7 @@ import java.util.Date;
 
 public class SysdatetoDateFormatHiveUDF extends UDF {
 
-    public static String evaluate(Date input, String format)
+    public static LocalDate evaluate(Date input, String format)
     {
         if(input==null)
 
@@ -16,10 +18,11 @@ public class SysdatetoDateFormatHiveUDF extends UDF {
             return null;
         }
 
-        Date date = Calendar.getInstance().getTime();
-        DateFormat dateFormat = new SimpleDateFormat(format);
-        return dateFormat.format(date);
-
+        LocalDate date = LocalDate.now();
+        DateTimeFormatter formatters = DateTimeFormatter.ofPattern(format);
+        String text = date.format(formatters);
+        LocalDate parsedDate = LocalDate.parse(text, formatters);
+        return parsedDate;
 
     }
 }
