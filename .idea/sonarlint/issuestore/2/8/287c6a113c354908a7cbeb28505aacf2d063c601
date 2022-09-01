@@ -1,10 +1,0 @@
-
-Ž
-java:S1130"qRemove the declaration of thrown exception 'java.text.ParseException', as it cannot be thrown from method's body.(ˆ…­Å8ÜÑò¢«0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(Óíã·8ï¯Þà«0
-W	java:S125"<This block of commented-out lines of code should be removed.(•µÖ8ï¯Þà«0
-]	java:S125"<This block of commented-out lines of code should be removed.(Æ¦Âþþÿÿÿÿ8ï¯Þà«0
-]	java:S125"<This block of commented-out lines of code should be removed.(Òçê•ûÿÿÿÿ8ï¯Þà«0
-W	java:S125"<This block of commented-out lines of code should be removed.(²¡Ù8ï¯Þà«0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(µâÄ³8ð¯Þà«0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(¼Üš¡8ð¯Þà«0
