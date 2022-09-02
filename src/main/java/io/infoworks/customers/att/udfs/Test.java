@@ -5,6 +5,8 @@ import java.text.ParseException;
 public class Test {
 
   public static void main(String[] args) throws ParseException {
+
+
    //String input2 = "A09B11A2022 23:59:59";
       //String input="";
   // System.out.println(StringToTimestampHiveUDF.evaluate(input));
@@ -22,10 +24,18 @@ public class Test {
 
       //System.out.println(TrimRegexp_replaceHiveUDF.evaluate("日本人 中國的 ~=[]()%+{}@","[^\\x00-\\x7F]","AA"));
 
-     // System.out.println(NullIFHiveUDF.evaluate("","ADITYA"));
+    System.out.println(NvlIntegerHiveUDF.evaluate(null,3));
+
+     System.out.println(NullIFHiveUDF.evaluate("ADITYA","~"));
 //System.out.println(CoalesceNullIF.evaluate("ADITYA","ADITYA","Latest"));
-      //System.out.println(CastNUllIFtoTimestamp0.evaluate("2012/10/04","","yyyy/MM/dd"));
-     // System.out.println(CoalesceCastToTimestamp0.evaluate("2022-10-20 00:00:56"));
+    System.out.println(CastNUllIFtoTimestamp0HiveUDF.evaluate("2012/10/04","","yyyy/MM/dd"));
+    System.out.println(CastNUllIFtoTimestamp0HiveUDF.evaluate("","","yyyy/MM/dd"));
+    System.out.println(CastNUllIFtoTimestamp0HiveUDF.evaluate(null,"","yyyy/MM/dd"));
+    System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("20210504","~","yyyyMMdd"));
+    System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate(null,"~","yyyyMMdd"));
+    System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("","~","yyyyMMdd"));
+
+    // System.out.println(CoalesceCastToTimestamp0.evaluate("2022-10-20 00:00:56"));
       //System.out.println(CoalesceCastToTimestamp0.evaluate(null));
       //System.out.println(CoalesceCastToTimestamp0.evaluate(""));
 
@@ -44,12 +54,12 @@ public class Test {
 
     //System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("20210504","~","yyyyMMdd"));
 
-    //System.out.println(SubstrCharlengthTrimTrailHiveUDF.evaluate("abcde      ",3));
+    System.out.println(SubstrCharlengthTrimTrailHiveUDF.evaluate("abcde      ",1));
 
    // System.out.println(NvlIntegerHiveUDF.evaluate(4,3));
    // System.out.println(NvlDoubleHiveUDF.evaluate(null,3.5678));
 
-    System.out.println(StringtoDateFormatHiveUDF.evaluate("220405",20,"yyyyMMdd"));
-    System.out.println(StringtoDateFormatHiveUDF.evaluate(null,20,"yyyyMMdd"));
+    //System.out.println(StringtoDateFormatHiveUDF.evaluate("220405",20,"yyyyMMdd"));
+    //System.out.println(StringtoDateFormatHiveUDF.evaluate(null,20,"yyyyMMdd"));
   }
 }
