@@ -4,9 +4,9 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class NvlDoubleHiveUDF extends UDF {
 
-    public static Double evaluate(Double input, Double defaultInput) {
+    public static Double evaluate(String input, Double defaultInput) {
         if (input != null) {
-            return input;
+            return Double.valueOf(input);
         }
 
         return defaultInput;

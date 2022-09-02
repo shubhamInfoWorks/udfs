@@ -5,10 +5,10 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 public class NvlFloatHiveUDF extends UDF {
 
 
-    public static Float evaluate(Float input, Float defaultInput) {
+    public static Float evaluate(String input, Float defaultInput) {
 
         if (input!= null) {
-            return (input);
+            return Float.valueOf((input));
         }
         return (defaultInput);
     }

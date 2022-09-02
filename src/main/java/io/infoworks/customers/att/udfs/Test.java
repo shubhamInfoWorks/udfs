@@ -31,9 +31,13 @@ public class Test {
     System.out.println(CastNUllIFtoTimestamp0HiveUDF.evaluate("2012/10/04","","yyyy/MM/dd"));
     System.out.println(CastNUllIFtoTimestamp0HiveUDF.evaluate("","","yyyy/MM/dd"));
     System.out.println(CastNUllIFtoTimestamp0HiveUDF.evaluate(null,"","yyyy/MM/dd"));
-    System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("20210504","~","yyyyMMdd"));
-    System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate(null,"~","yyyyMMdd"));
-    System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("","~","yyyyMMdd"));
+
+   System.out.println(divideHiveUDF.evaluate(2,100));
+    System.out.println(divideHiveUDF.evaluate(0,100));
+
+
+
+
 
     // System.out.println(CoalesceCastToTimestamp0.evaluate("2022-10-20 00:00:56"));
       //System.out.println(CoalesceCastToTimestamp0.evaluate(null));
@@ -54,7 +58,7 @@ public class Test {
 
     //System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("20210504","~","yyyyMMdd"));
 
-    System.out.println(SubstrCharlengthTrimTrailHiveUDF.evaluate("abcde      ",1));
+   // System.out.println(SubstrCharlengthTrimTrailHiveUDF.evaluate("abcde      ",1));
 
    // System.out.println(NvlIntegerHiveUDF.evaluate(4,3));
    // System.out.println(NvlDoubleHiveUDF.evaluate(null,3.5678));
