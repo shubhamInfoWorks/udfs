@@ -1,9 +1,10 @@
 package io.infoworks.customers.att.udfs;
+import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hive.ql.exec.UDF;
 public class caswhen_multiplethen_HiveUDF extends UDF {
 
     public static String evaluate(String input) {
-        if (input.isEmpty()) {
+        if (StringUtils.isEmpty(input)) {
             return null;
         } else if (input.equals("Q")) {
 

@@ -1,4 +1,5 @@
 package io.infoworks.customers.att.udfs;
+import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
 import static org.apache.commons.lang.StringUtils.length;
@@ -8,7 +9,7 @@ public class SubstrCharlengthTrimTrailHiveUDF extends UDF{
 
     public static String evaluate(String input, int length)
     {
-        if(input.isEmpty())
+        if(StringUtils.isEmpty(input))
         {
             return null;
         }
