@@ -44,6 +44,9 @@ public class Test {
 
     //System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("20210504","~","yyyyMMdd"));
 
-    System.out.println(SubstrCharlengthTrimTrailHiveUDF.evaluate("abcde      ",1));
+    //System.out.println(SubstrCharlengthTrimTrailHiveUDF.evaluate("abcde      ",3));
+
+   // System.out.println(NvlIntegerHiveUDF.evaluate(4,3));
+    System.out.println(NvlDoubleHiveUDF.evaluate(null,3.5678));
   }
 }
