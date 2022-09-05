@@ -16,7 +16,7 @@ public class StringToTimestampHiveUDF extends UDF {
 
     String timestampString =
         input.substring(6, 10) + "-" + input.substring(0, 2) + "-" + input.substring(3, 5)
-            + input.substring(10, 18);
+            + input.substring(10, 19);
 
 //            input.substring(7, 11) + "-" + input.substring(1, 3) + "-" + input.substring(4, 6)
 //            + input.substring(11, 19);
