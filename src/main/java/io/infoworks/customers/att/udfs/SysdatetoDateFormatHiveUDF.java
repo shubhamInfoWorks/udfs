@@ -8,15 +8,12 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class SysdatetoDateFormatHiveUDF extends UDF {
 
-    public static LocalDate evaluate(Date input, String format)
+    public static Date evaluate(Date input)
     {
 
 
-        LocalDate date = LocalDate.now();
-        DateTimeFormatter formatters = DateTimeFormatter.ofPattern(format);
-        String text = date.format(formatters);
-        LocalDate parsedDate = LocalDate.parse(text, formatters);
-        return parsedDate;
+
+        return new Date();
 
     }
 }
