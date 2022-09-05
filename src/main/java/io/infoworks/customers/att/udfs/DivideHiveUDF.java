@@ -4,15 +4,12 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class DivideHiveUDF extends UDF {
 
-    public static double evaluate(double input, double divisor) {
-        if (input == 0) {
+    public static double evaluate(Integer input, String divisor) {
 
-            return 0;
-        }
-        if (input / divisor == 0) {
-            return (int) (input / divisor);
+        if (input / Integer.parseInt(divisor) == 0) {
+            return input / Integer.parseInt(divisor);
         } else {
-            return input / divisor;
+            return input / Integer.parseInt(divisor);
         }
 
 

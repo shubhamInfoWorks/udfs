@@ -39,10 +39,10 @@ public class Test {
     //System.out.println(CastNUllIFtoTimestamp0HiveUDF.evaluate("","","yyyy/MM/dd"));
     //System.out.println(CastNUllIFtoTimestamp0HiveUDF.evaluate(null,"","yyyy/MM/dd"));
 
-    //System.out.println(divideHiveUDF.evaluate(2,100));
+   // System.out.println(ReturnZeroIfParamsEqualHiveUDF.evaluate(0,"4","0"));
+    //System.out.println(DivideHiveUDF.evaluate(600,"100"));
     //System.out.println(divideHiveUDF.evaluate(0,100));
-
-System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2022 23:59:59"));
+    System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2022 23:59:59"));
 //System.out.println("09B11B2022 23:59:59".length());
 
     // System.out.println(CoalesceCastToTimestamp0.evaluate("2022-10-20 00:00:56"));
@@ -50,8 +50,8 @@ System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2022 23:59:59"));
     //System.out.println(CoalesceCastToTimestamp0.evaluate(""));
 
     //System.out.println(StringtoDate.evaluate("2012/10/09","yyyy/MM/dd"));
-    System.out.println(SysdatetoDateFormatHiveUDF.evaluate(new Date(2022, 12, 12)));
-    System.out.println(SystimetoIntHiveUDF.evaluate(new Time(124505), "HHmmss"));
+   // System.out.println(SysdatetoDateFormatHiveUDF.evaluate(new Date(2022, 12, 12)));
+    //System.out.println(SystimetoIntHiveUDF.evaluate(new Time(124505), "HHmmss"));
 //System.out.println(TimestampTransformerHiveUDF.evaluate(null));
     //System.out.println(StringtoDateFormatHiveUDF.evaluate("20220907","yyyyDDmm"));
     // System.out.println(divide.evaluate(26789,10000));
@@ -68,7 +68,7 @@ System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2022 23:59:59"));
     // System.out.println(NvlIntegerHiveUDF.evaluate(4,3));
     // System.out.println(NvlDoubleHiveUDF.evaluate(null,3.5678));
 
-    //System.out.println(StringtoDateFormatHiveUDF.evaluate("220405",20,"yyyyMMdd"));
+   // System.out.println(StringtoDateFormatHiveUDF.evaluate("220405","19","yyyyMMdd"));
     //System.out.println(StringtoDateFormatHiveUDF.evaluate(null,20,"yyyyMMdd"));
   }
 }

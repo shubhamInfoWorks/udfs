@@ -7,7 +7,7 @@ import org.apache.commons.lang.StringUtils;
 
 public class ReturnZeroIfParamsEqualHiveUDF {
 
-  public static Integer evaluate(Integer input,Integer secondInteger, String dateformat)
+  public static Integer evaluate(Integer input,String secondInteger, String dateformat)
       throws ParseException {
     if (input == null) {
       return 0;
