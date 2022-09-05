@@ -42,7 +42,7 @@ public class Test {
     //System.out.println(divideHiveUDF.evaluate(2,100));
     //System.out.println(divideHiveUDF.evaluate(0,100));
 
-//System.out.println(StringToTimestampHiveUDF.evaluate("A09B11A2022 23:59:59"));
+System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2022 23:59:59"));
 //System.out.println("09B11B2022 23:59:59".length());
 
     // System.out.println(CoalesceCastToTimestamp0.evaluate("2022-10-20 00:00:56"));
