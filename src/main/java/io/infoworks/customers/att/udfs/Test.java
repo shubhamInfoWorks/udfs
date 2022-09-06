@@ -76,7 +76,7 @@ public class Test {
     // System.out.println(NvlIntegerHiveUDF.evaluate(4,3));
     // System.out.println(NvlDoubleHiveUDF.evaluate(null,3.5678));
 
-   // System.out.println(StringtoDateFormatHiveUDF.evaluate("220405","19","yyyyMMdd"));
+   System.out.println(StringtoDateFormatHiveUDF.evaluate("220405","19","yyyyMMdd"));
   //  System.out.println(StringtoDateFormatHiveUDF.evaluate("200405","20","yyyyMMdd"));
   }
 }
