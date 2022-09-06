@@ -40,15 +40,19 @@ public class Test {
     //System.out.println(CastNUllIFtoTimestamp0HiveUDF.evaluate(null,"","yyyy/MM/dd"));
 
    // System.out.println(ReturnZeroIfParamsEqualHiveUDF.evaluate(0,"4","0"));
-    //System.out.println(DivideHiveUDF.evaluate(600,"100"));
+    System.out.println(DivideHiveUDF.evaluate(600,"100"));
+    System.out.println(DivideHiveUDF.evaluate("600","100"));
+    System.out.println(DivideHiveUDF.evaluate("700","100"));
+    System.out.println(ReturnsecondinputHiveUDF.evaluate(2,"test"));
+    System.out.println(ReturnsecondinputHiveUDF.evaluate("2",null));
     //System.out.println(divideHiveUDF.evaluate(0,100));
-    System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2024 22:59:09"));
+    //System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2024 22:59:09"));
 //System.out.println(SysdatetoIntHiveUDF.evaluate(2));
   //  System.out.println(StringToTimestampHiveUDF.evaluate("09/03/2022 22:34:31"));
 //System.out.println(NullIFHiveUDF.evaluate("20220219",""));
-    System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("20220219","~","yyyyMMdd"));
+   // System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("20240219","~","yyyyMMdd"));
 //System.out.println("09B11B2022 23:59:59".length());
-System.out.println(CastDateFormatElseAnotherDateHiveUDF.evaluate("20220219","","99991231","yyyyMMdd"));
+//System.out.println(CastDateFormatElseAnotherDateHiveUDF.evaluate("20220219","","99991231","yyyyMMdd"));
     // System.out.println(CoalesceCastToTimestamp0.evaluate("2022-10-20 00:00:56"));
     //System.out.println(CoalesceCastToTimestamp0.evaluate(null));
     //System.out.println(CoalesceCastToTimestamp0.evaluate(""));
@@ -73,6 +77,6 @@ System.out.println(CastDateFormatElseAnotherDateHiveUDF.evaluate("20220219","","
     // System.out.println(NvlDoubleHiveUDF.evaluate(null,3.5678));
 
    // System.out.println(StringtoDateFormatHiveUDF.evaluate("220405","19","yyyyMMdd"));
-    System.out.println(StringtoDateFormatHiveUDF.evaluate("200405","20","yyyyMMdd"));
+  //  System.out.println(StringtoDateFormatHiveUDF.evaluate("200405","20","yyyyMMdd"));
   }
 }

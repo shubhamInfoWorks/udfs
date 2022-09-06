@@ -17,6 +17,8 @@ public class CastNullIFtoDateFormatHiveUDF extends UDF {
     }
 
     DateFormat dateFormat = new SimpleDateFormat(dateformat);
+    //System.out.println(Date.valueOf(LocalDate.parse(NullIFHiveUDF.evaluate(input, secondexpression), DateTimeFormatter.ofPattern(dateformat))).getClass());
+
     return Date.valueOf(LocalDate.parse(NullIFHiveUDF.evaluate(input, secondexpression), DateTimeFormatter.ofPattern(dateformat)));
 
   }

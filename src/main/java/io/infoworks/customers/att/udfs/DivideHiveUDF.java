@@ -6,12 +6,21 @@ public class DivideHiveUDF extends UDF {
 
     public static double evaluate(Integer input, String divisor) {
 
-        if (input / Integer.parseInt(divisor) == 0) {
-            return input / Integer.parseInt(divisor);
-        } else {
-            return input / Integer.parseInt(divisor);
-        }
+
+        return input / Integer.parseInt(divisor);
 
 
     }
+
+
+    public static double evaluate(String input1, String divisor1) {
+
+
+            return Integer.valueOf(input1) / Integer.parseInt(divisor1);
+
+
+
+    }
+
+
 }
