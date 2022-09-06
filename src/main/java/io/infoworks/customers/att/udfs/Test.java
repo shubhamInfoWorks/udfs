@@ -42,8 +42,8 @@ public class Test {
    // System.out.println(ReturnZeroIfParamsEqualHiveUDF.evaluate(0,"4","0"));
     System.out.println(DivideHiveUDF.evaluate(600,"100"));
     System.out.println(DivideHiveUDF.evaluate("600.2","100"));
-    System.out.println(DivideHiveUDF.evaluate("700","100"));
-    System.out.println(DivideHiveUDF.evaluate(4.24,"100"));
+    System.out.println(DivideHiveUDF.evaluate("704","100"));
+    System.out.println(DivideHiveUDF.evaluate(402,"100"));
    // System.out.println(ReturnsecondinputHiveUDF.evaluate(2,"test"));
     //System.out.println(ReturnsecondinputHiveUDF.evaluate("2",null));
     //System.out.println(divideHiveUDF.evaluate(0,100));
