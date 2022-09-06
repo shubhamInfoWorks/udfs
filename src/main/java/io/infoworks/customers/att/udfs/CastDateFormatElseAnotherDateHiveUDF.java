@@ -7,8 +7,9 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.hadoop.hive.ql.exec.UDF;
 
-public class CastDateFormatElseAnotherDateHiveUDF {
+public class CastDateFormatElseAnotherDateHiveUDF extends UDF {
   public static Date evaluate(String input, String secondString, String secondDate, String dateformat) throws ParseException {
 
     DateFormat dateFormat = new SimpleDateFormat(dateformat);

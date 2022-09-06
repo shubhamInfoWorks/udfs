@@ -5,8 +5,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.apache.commons.lang.StringUtils;
+import org.apache.hadoop.hive.ql.exec.UDF;
 
-public class CastReturnCurrentTimestampIfNullElseGivenTimestampHiveUDF {
+public class CastReturnCurrentTimestampIfNullElseGivenTimestampHiveUDF extends UDF {
 
   public static Timestamp evaluate(String input) throws ParseException {
 

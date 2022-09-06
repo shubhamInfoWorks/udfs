@@ -4,8 +4,9 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import org.apache.commons.lang.StringUtils;
+import org.apache.hadoop.hive.ql.exec.UDF;
 
-public class ReturnZeroIfParamsEqualHiveUDF {
+public class ReturnZeroIfParamsEqualHiveUDF extends UDF {
 
   public static Integer evaluate(Integer input,String secondInteger, String dateformat)
       throws ParseException {
