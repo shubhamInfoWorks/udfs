@@ -12,7 +12,7 @@ public class DivideHiveUDF extends UDF {
 
     }
 
-
+//
     public static double evaluate(String input1, String divisor1) {
 
 
