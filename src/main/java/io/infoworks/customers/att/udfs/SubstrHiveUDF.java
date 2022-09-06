@@ -5,10 +5,20 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class SubstrHiveUDF extends UDF {
 
-  public static String evaluate(String input, Integer startIndex, int endIndex) {
+  public static String evaluate(String input, int startIndex, int endIndex) {
     if (StringUtils.isEmpty(input)) {
       return input;
     }
-    return input.substring(startIndex, endIndex);
+
+    try {
+      return input.substring(startIndex, endIndex);
+    }
+
+    catch (Exception e)
+
+    {
+      return null;
+
+    }
   }
 }
