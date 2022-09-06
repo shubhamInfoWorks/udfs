@@ -41,10 +41,11 @@ public class Test {
 
    // System.out.println(ReturnZeroIfParamsEqualHiveUDF.evaluate(0,"4","0"));
     System.out.println(DivideHiveUDF.evaluate(600,"100"));
-    System.out.println(DivideHiveUDF.evaluate("600","100"));
+    System.out.println(DivideHiveUDF.evaluate("600.2","100"));
     System.out.println(DivideHiveUDF.evaluate("700","100"));
-    System.out.println(ReturnsecondinputHiveUDF.evaluate(2,"test"));
-    System.out.println(ReturnsecondinputHiveUDF.evaluate("2",null));
+    System.out.println(DivideHiveUDF.evaluate(4.24,"100"));
+   // System.out.println(ReturnsecondinputHiveUDF.evaluate(2,"test"));
+    //System.out.println(ReturnsecondinputHiveUDF.evaluate("2",null));
     //System.out.println(divideHiveUDF.evaluate(0,100));
     //System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2024 22:59:09"));
 //System.out.println(SysdatetoIntHiveUDF.evaluate(2));
@@ -76,7 +77,7 @@ public class Test {
     // System.out.println(NvlIntegerHiveUDF.evaluate(4,3));
     // System.out.println(NvlDoubleHiveUDF.evaluate(null,3.5678));
 
-   System.out.println(StringtoDateFormatHiveUDF.evaluate("220405","19","yyyyMMdd"));
+   //System.out.println(StringtoDateFormatHiveUDF.evaluate("220405","19","yyyyMMdd"));
   //  System.out.println(StringtoDateFormatHiveUDF.evaluate("200405","20","yyyyMMdd"));
   }
 }
