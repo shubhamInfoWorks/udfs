@@ -1,4 +1,5 @@
 package io.infoworks.customers.att.udfs;
+import java.sql.Date;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -11,7 +12,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 public class StringtoDateFormatHiveUDF extends UDF{
-    public static LocalDate evaluate(String input, String defaultConcatvalue , String dateformat) throws ParseException {
+    public static Date evaluate(String input, String defaultConcatvalue , String dateformat) throws ParseException {
 
         if(StringUtils.isEmpty(input))
 
@@ -21,7 +22,7 @@ public class StringtoDateFormatHiveUDF extends UDF{
         }
         input=defaultConcatvalue+input;
         DateFormat dateFormat = new SimpleDateFormat(dateformat);
-        return LocalDate.parse(input, DateTimeFormatter.ofPattern(dateformat));
+        return Date.valueOf(LocalDate.parse(input, DateTimeFormatter.ofPattern(dateformat)));
 
     }
 }
