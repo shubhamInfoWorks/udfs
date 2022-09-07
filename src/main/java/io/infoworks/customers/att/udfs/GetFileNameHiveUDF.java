@@ -10,6 +10,7 @@ public class GetFileNameHiveUDF extends UDF {
     {
       String file_name=String.valueOf(functions.input_file_name());
        // String file_name="tlg_tax_fees.abc.202207.dat";
+        // String file_name="/home/infoworks/tlg_tax_fees.abc.202207.dat";
       if(StringUtils.isEmpty(file_name))
 
 
