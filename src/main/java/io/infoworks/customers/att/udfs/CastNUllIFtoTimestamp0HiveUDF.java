@@ -10,15 +10,20 @@ import java.text.SimpleDateFormat;
 
 public class CastNUllIFtoTimestamp0HiveUDF extends UDF {
 
-    public static Timestamp evaluate(String input, String secondexpression,String timestampformat) throws ParseException {
+    public static Timestamp evaluate(String input, String secondexpression, String timestampformat) throws ParseException {
 
         if (StringUtils.isEmpty(input)) {
             return null;
         }
 
+        try {
+            SimpleDateFormat parseFormat = new SimpleDateFormat(timestampformat);
+            return new java.sql.Timestamp(parseFormat.parse(NullIFHiveUDF.evaluate(input, secondexpression)).getTime());
 
-        SimpleDateFormat parseFormat = new SimpleDateFormat(timestampformat);
-        return new java.sql.Timestamp(parseFormat.parse(NullIFHiveUDF.evaluate(input, secondexpression)).getTime());
+        } catch (Exception e) {
+
+            return null;
+        }
 
     }
 }
