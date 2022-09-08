@@ -13,11 +13,12 @@ import java.util.Calendar;
 public class Test {
 
   public static void main(String[] args) throws ParseException {
-
+    String file_name="tlg_tax_fees.abc.202207.dat";
+    System.out.println(GetFileNameHiveUDF.evaluate("test","a"));
     //String input2 = "A09B11A2022 23:59:59";
     //String input="";
     // System.out.println(StringToTimestampHiveUDF.evaluate(input));
-System.out.println(SubstrHiveUDF.evaluate("AYDITYA",0,2));
+//System.out.println(SubstrHiveUDF.evaluate("AYDITYA",0,2));
 //System.out.println(SysdatetoDateFormatHiveUDF.evaluate(null,"yyMMdd"));
 //    System.out.println(LitHiveUDF.evaluate(input));
     //System.out.println(TrimOReplaceSubstringHiveUDF.evaluate(input, 30, "", ""));
