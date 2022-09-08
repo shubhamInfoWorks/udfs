@@ -32,4 +32,12 @@ public class NvlDoubleHiveUDF extends UDF {
     }
     return defaultInput;
   }
+
+  public static String evaluate(String input, String defaultInput) {
+    if (input != null) {
+      return input;
+    }
+    return defaultInput;
+  }
+
 }
