@@ -8,5 +8,4 @@ public class TimestampTransformerHiveUDF extends UDF {
   public static Timestamp evaluate(Timestamp untransformed) {
     return new Timestamp(System.currentTimeMillis());
   }
-
 }
