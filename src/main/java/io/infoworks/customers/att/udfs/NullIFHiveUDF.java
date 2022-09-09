@@ -16,7 +16,7 @@ public class NullIFHiveUDF extends UDF {
 
     }
     
-    public static long evaluate(long input,long secondexpression)
+    public static long evaluate(long input,String secondexpression)
 
     {
 

@@ -1,6 +1,7 @@
 package io.infoworks.customers.att.udfs;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.ObjectUtils;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class CoalesceNullIFHiveUDF extends UDF {
@@ -19,16 +20,15 @@ public class CoalesceNullIFHiveUDF extends UDF {
     }
 
 
-    public static long evaluate(long input, long secondexpression, long defaultinput) {
+    public static long evaluate(long input, String secondexpression, long defaultinput) {
 
-        try {
-            return Utils.coalesce(NullIFHiveUDF.evaluate(input, secondexpression), defaultinput);
-        }
 
-        catch(Exception e){
+         //   return Utils.coalesce(NullIFHiveUDF.evaluate(input, secondexpression), defaultinput);
 
-            return 0;
-        }
+       return  ObjectUtils.firstNonNull(NullIFHiveUDF.evaluate(input, secondexpression), defaultinput);
+
+
+
 
     }
 
