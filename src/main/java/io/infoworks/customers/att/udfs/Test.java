@@ -50,7 +50,7 @@ public class Test {
     //System.out.println(divideHiveUDF.evaluate(0,100));
     //System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2024 22:59:09"));
 System.out.println(SysdatetoIntHiveUDF.evaluate(2));
-System.out.println(CastAsdateHiveUDF.evaluate("04/20/2022 00:00:56","MM/dd/yyyy HH:mm:ss"));
+//System.out.println(CastAsdateHiveUDF.evaluate("04/20/2022 00:00:56","MM/dd/yyyy HH:mm:ss"));
   //  System.out.println(StringToTimestampHiveUDF.evaluate("09/03/2022 22:34:31"));
 //System.out.println(NullIFHiveUDF.evaluate("20220219",""));
    // System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("20240219","~","yyyyMMdd"));

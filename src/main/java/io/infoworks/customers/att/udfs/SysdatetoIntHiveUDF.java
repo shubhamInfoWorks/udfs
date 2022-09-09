@@ -1,10 +1,13 @@
 package io.infoworks.customers.att.udfs;
 
+//import jdk.vm.ci.meta.Local;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
 //import java.sql.Time;
-import java.time.*;
-import java.time.LocalDateTime;
+import org.joda.time.DateTime;
+import org.joda.time.LocalDateTime;
+import org.joda.time.LocalTime;
+
 import java.text.ParseException;
 import java.time.format.DateTimeFormatter;
 
@@ -17,6 +20,7 @@ public static LocalTime evaluate (Integer input) throws ParseException {
    // String strDate = dateFormat.format(date);
 
    // long now = System.currentTimeMillis();
-    return LocalTime.parse(LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
+   //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
+    return LocalTime.now();
 }
 }
