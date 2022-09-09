@@ -9,14 +9,13 @@ import java.time.format.DateTimeFormatter;
 
 
 public class SysdatetoIntHiveUDF extends UDF{
-public static Integer evaluate (Integer input) throws ParseException {
+public static Time evaluate (Integer input) throws ParseException {
 
    // Date date = Calendar.getInstance().getTime();x
    // DateFormat dateFormat = new SimpleDateFormat(dateformat);
    // String strDate = dateFormat.format(date);
 
-
-    return Integer.valueOf(LocalDateTime.now()
-            .format(DateTimeFormatter.ofPattern("HHmmss")));
+    long now = System.currentTimeMillis();
+    return new java.sql.Time(now);
 }
 }

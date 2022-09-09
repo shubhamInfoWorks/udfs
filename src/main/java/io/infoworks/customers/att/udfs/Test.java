@@ -13,8 +13,8 @@ import java.util.Calendar;
 public class Test {
 
   public static void main(String[] args) throws ParseException {
-    String file_name="tlg_tax_fees.abc.202207.dat";
-    System.out.println(GetFileNameHiveUDF.evaluate("test","a"));
+   // String file_name="tlg_tax_fees.abc.202207.dat";
+   // System.out.println(GetFileNameHiveUDF.evaluate("test","a"));
     //String input2 = "A09B11A2022 23:59:59";
     //String input="";
     // System.out.println(StringToTimestampHiveUDF.evaluate(input));
@@ -49,7 +49,8 @@ public class Test {
     //System.out.println(ReturnsecondinputHiveUDF.evaluate("2",null));
     //System.out.println(divideHiveUDF.evaluate(0,100));
     //System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2024 22:59:09"));
-//System.out.println(SysdatetoIntHiveUDF.evaluate(2));
+System.out.println(SysdatetoIntHiveUDF.evaluate(2));
+System.out.println(CastAsdateHiveUDF.evaluate("04/20/2022 00:00:56","MM/dd/yyyy HH:mm:ss"));
   //  System.out.println(StringToTimestampHiveUDF.evaluate("09/03/2022 22:34:31"));
 //System.out.println(NullIFHiveUDF.evaluate("20220219",""));
    // System.out.println(CastNullIFtoDateFormatHiveUDF.evaluate("20240219","~","yyyyMMdd"));
@@ -60,7 +61,7 @@ public class Test {
     //System.out.println(CoalesceCastToTimestamp0.evaluate(""));
 
     //System.out.println(StringtoDate.evaluate("2012/10/09","yyyy/MM/dd"));
-   // System.out.println(SysdatetoDateFormatHiveUDF.evaluate(new Date(2022, 12, 12)));
+   //System.out.println(SysdatetoDateFormatHiveUDF.evaluate(new Date(2022, 12, 12)));
     //System.out.println(SystimetoIntHiveUDF.evaluate(new Time(124505), "HHmmss"));
 //System.out.println(TimestampTransformerHiveUDF.evaluate(null));
     //System.out.println(StringtoDateFormatHiveUDF.evaluate("20220907","yyyyDDmm"));
