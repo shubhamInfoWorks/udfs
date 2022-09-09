@@ -6,7 +6,7 @@ import java.sql.Date;
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.text.ParseException;
-import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.LocalTime;
 import java.util.Calendar;
 
