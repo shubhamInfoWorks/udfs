@@ -1,14 +1,6 @@
 package io.infoworks.customers.att.udfs;
 
-import org.joda.time.DateTime;
-
-import java.sql.Date;
-import java.sql.Time;
-import java.sql.Timestamp;
 import java.text.ParseException;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.Calendar;
 
 public class Test {
 
@@ -80,5 +72,6 @@ public class Test {
 
    //System.out.println(StringtoDateFormatHiveUDF.evaluate("220405","19","yyyyMMdd"));
   //  System.out.println(StringtoDateFormatHiveUDF.evaluate("200405","20","yyyyMMdd"));
+    System.out.println(TimeAsString.evaluate("2021/05/04 23:45:30.05","yyyy/MM/dd HH:mm:ss.SSS"));
   }
 }
