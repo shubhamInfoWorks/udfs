@@ -16,6 +16,6 @@ public static Time evaluate (Integer input) throws ParseException {
    // String strDate = dateFormat.format(date);
 
     long now = System.currentTimeMillis();
-    return new java.sql.Time(now);
+    return new Time(now);
 }
 }
