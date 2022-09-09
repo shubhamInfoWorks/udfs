@@ -3,17 +3,14 @@ package io.infoworks.customers.att.udfs;
 //import jdk.vm.ci.meta.Local;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
-//import java.sql.Time;
-import org.joda.time.DateTime;
-import org.joda.time.LocalDateTime;
-import org.joda.time.LocalTime;
+import org.apache.spark.sql.Column;
+import org.apache.spark.sql.functions;
 
 import java.text.ParseException;
-import java.time.format.DateTimeFormatter;
 
 
 public class SysdatetoIntHiveUDF extends UDF{
-public static LocalTime evaluate (Integer input) throws ParseException {
+public static Column evaluate (Integer input) throws ParseException {
 
    // Date date = Calendar.getInstance().getTime();x
    // DateFormat dateFormat = new SimpleDateFormat(dateformat);
@@ -21,6 +18,9 @@ public static LocalTime evaluate (Integer input) throws ParseException {
 
    // long now = System.currentTimeMillis();
    //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
-    return LocalTime.now();
+
+
+  return functions.current_timestamp();
+
 }
 }
