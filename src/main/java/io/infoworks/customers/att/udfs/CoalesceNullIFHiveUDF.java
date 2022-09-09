@@ -5,13 +5,30 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class CoalesceNullIFHiveUDF extends UDF {
 
-    public static String evaluate(String input, String secondexpression, String defaultinput) {
+    public static long evaluate(String input, String secondexpression, String defaultinput) {
 
-        if (StringUtils.isEmpty(input)) {
-            return null;
-
+        try {
+            return Long.parseLong(Utils.coalesce(NullIFHiveUDF.evaluate(input, secondexpression), defaultinput));
         }
-        return Utils.coalesce(NullIFHiveUDF.evaluate(input,secondexpression),defaultinput);
+
+        catch(Exception e){
+
+            return 0;
+        }
+
+    }
+
+
+    public static long evaluate(long input, long secondexpression, long defaultinput) {
+
+        try {
+            return Utils.coalesce(NullIFHiveUDF.evaluate(input, secondexpression), defaultinput);
+        }
+
+        catch(Exception e){
+
+            return 0;
+        }
 
     }
 

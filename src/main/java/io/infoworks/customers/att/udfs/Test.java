@@ -43,9 +43,11 @@ public class Test {
         //System.out.println(divideHiveUDF.evaluate(0,100));
         //System.out.println(StringToTimestampHiveUDF.evaluate("09B11A2024 22:59:09"));
 //System.out.println(SysdatetoIntHiveUDF.evaluate(2));
+        System.out.println(CoalesceNullIFHiveUDF.evaluate("23","234","67"));
+        System.out.println(CoalesceNullIFHiveUDF.evaluate(2,3,6));
 
-       // System.out.println(NULLIFHiveTimestampUDF.evaluate(Timestamp.valueOf("2022-03-02 22:34:31"),Timestamp.valueOf("2022-03-02 22:34:32")));
-System.out.println(CaseWhenIsEmptyThenNull.evaluate("2022-03-02"));
+        // System.out.println(NULLIFHiveTimestampUDF.evaluate(Timestamp.valueOf("2022-03-02 22:34:31"),Timestamp.valueOf("2022-03-02 22:34:32")));
+//System.out.println(CaseWhenIsEmptyThenNull.evaluate("2022-03-02"));
         //System.out.println(NULLIFHiveTimestampUDF.evaluate(Timestamp.valueOf("2022-03-02 22:34:30"),null));
 
 //System.out.println(CastAsdateHiveUDF.evaluate("04/20/2022 00:00:56","MM/dd/yyyy HH:mm:ss"));

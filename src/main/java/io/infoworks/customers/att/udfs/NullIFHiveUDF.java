@@ -15,4 +15,18 @@ public class NullIFHiveUDF extends UDF {
         return input;
 
     }
+    
+    public static long evaluate(long input,long secondexpression)
+
+    {
+
+        if(String.valueOf(input).equals(String.valueOf(secondexpression)))
+        {
+            return 0;
+        }
+
+        return input;
+
+    }
+    
 }
