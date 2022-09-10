@@ -10,6 +10,5 @@ public class CoalesceTrimHiveUDF extends UDF {
       return input;
     }
     return (String) Utils.coalesce(defaults);
-
   }
 }

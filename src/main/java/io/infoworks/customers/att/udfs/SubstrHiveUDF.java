@@ -12,13 +12,9 @@ public class SubstrHiveUDF extends UDF {
 
     try {
       return input.substring(startIndex, endIndex);
-    }
+    } catch (Exception e) {
 
-    catch (Exception e)
-
-    {
       return null;
-
     }
   }
 }

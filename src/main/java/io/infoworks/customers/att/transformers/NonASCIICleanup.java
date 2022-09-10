@@ -5,7 +5,6 @@ import java.util.function.Function;
 
 public class NonASCIICleanup implements Function<String, String>, Serializable {
 
-
   @Override
   public String apply(String unTransformed) {
     if (unTransformed == null) {

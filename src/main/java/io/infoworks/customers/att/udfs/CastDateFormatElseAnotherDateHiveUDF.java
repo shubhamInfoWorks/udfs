@@ -10,7 +10,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class CastDateFormatElseAnotherDateHiveUDF extends UDF {
-  public static Date evaluate(String input, String secondString, String secondDate, String dateformat) throws ParseException {
+  public static Date evaluate(
+      String input, String secondString, String secondDate, String dateformat)
+      throws ParseException {
 
     DateFormat dateFormat = new SimpleDateFormat(dateformat);
 
@@ -23,7 +25,5 @@ public class CastDateFormatElseAnotherDateHiveUDF extends UDF {
     }
 
     return Date.valueOf(LocalDate.parse(secondDate, DateTimeFormatter.ofPattern(dateformat)));
-
   }
-
 }

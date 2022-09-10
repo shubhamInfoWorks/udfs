@@ -12,22 +12,22 @@ public class StringToTimestampHiveUDF extends UDF {
     if (StringUtils.isEmpty(input)) {
       return null;
     }
-//09/03/2022 22:34:31
+    // 09/03/2022 22:34:31
 
-  try {
+    try {
       String timestampString =
-              input.substring(6, 10) + "-" + input.substring(0, 2) + "-" + input.substring(3, 5)
-                      + input.substring(10, 19);
-
+          input.substring(6, 10)
+              + "-"
+              + input.substring(0, 2)
+              + "-"
+              + input.substring(3, 5)
+              + input.substring(10, 19);
 
       SimpleDateFormat parseFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
       return new java.sql.Timestamp(parseFormat.parse(timestampString).getTime());
-  }
-  catch (Exception e) {
+    } catch (Exception e) {
 
       return null;
-  }
-
-
+    }
   }
 }

@@ -39,5 +39,4 @@ public class NvlHiveUDF extends UDF {
     }
     return defaultInput;
   }
-
 }

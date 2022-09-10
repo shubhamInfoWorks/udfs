@@ -8,7 +8,8 @@ import org.apache.hadoop.hive.ql.exec.UDF;
 public class TimeAsString extends UDF {
 
   public static String evaluate(String input) throws ParseException {
-    return new Timestamp(System.currentTimeMillis()).toLocalDateTime().format(
-        DateTimeFormatter.ofPattern("HH:mm:ss"));
+    return new Timestamp(System.currentTimeMillis())
+        .toLocalDateTime()
+        .format(DateTimeFormatter.ofPattern("HH:mm:ss"));
   }
 }

@@ -19,5 +19,4 @@ public class CastReturnCurrentTimestampIfNullElseGivenTimestampHiveUDF extends U
 
     return new java.sql.Timestamp(parseFormat.parse(input).getTime());
   }
-
 }

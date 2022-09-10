@@ -10,5 +10,4 @@ public class CaseWhenIsNullThenEmpty extends UDF {
     }
     return input;
   }
-
 }

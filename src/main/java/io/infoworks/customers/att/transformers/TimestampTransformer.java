@@ -10,5 +10,4 @@ public class TimestampTransformer implements Function<Timestamp, Timestamp>, Ser
   public Timestamp apply(Timestamp untransformed) {
     return new Timestamp(System.currentTimeMillis());
   }
-
 }

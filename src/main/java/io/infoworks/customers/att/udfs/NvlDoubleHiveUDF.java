@@ -39,5 +39,4 @@ public class NvlDoubleHiveUDF extends UDF {
     }
     return defaultInput;
   }
-
 }
