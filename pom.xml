@@ -44,6 +44,16 @@
         </dependencies>
         <configuration>
           <!-- define a language-specific format -->
+          <formats>
+            <!-- you can define as many formats as you want, each is independent -->
+            <format>
+              <!-- define the files to apply to -->
+              <includes>
+                <include>*.md</include>
+                <include>.gitignore</include>
+              </includes>
+            </format>
+          </formats>
           <java>
             <!-- no need to specify files, inferred automatically, but you can if you want -->
 
