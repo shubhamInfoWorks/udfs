@@ -85,6 +85,6 @@ public class Test {
 
     // System.out.println(StringtoDateFormatHiveUDF.evaluate("220405","19","yyyyMMdd"));
     //  System.out.println(StringtoDateFormatHiveUDF.evaluate("200405","20","yyyyMMdd"));
-    //System.out.println(TimeAsString.evaluate(null));
+    // System.out.println(TimeAsString.evaluate(null));
   }
 }
