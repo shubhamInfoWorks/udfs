@@ -10,7 +10,12 @@ public class DivideHiveUDF extends UDF {
   }
 
   //
-  public static double evaluate(String input1, String divisor) {
+  public static String evaluate(String input1, String divisor) {
+    Double output = Double.valueOf(input1) / Double.valueOf(divisor);
+    return output.toString();
+  }
+
+  public static Double evaluate(String input1, Double divisor) {
 
     return Double.valueOf(input1) / Double.valueOf(divisor);
   }
