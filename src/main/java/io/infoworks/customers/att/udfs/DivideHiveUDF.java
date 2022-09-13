@@ -1,5 +1,6 @@
 package io.infoworks.customers.att.udfs;
 
+import java.math.BigDecimal;
 import org.apache.hadoop.hive.ql.exec.UDF;
 
 public class DivideHiveUDF extends UDF {
@@ -18,6 +19,10 @@ public class DivideHiveUDF extends UDF {
   public static Double evaluate(String input1, Double divisor) {
 
     return Double.valueOf(input1) / Double.valueOf(divisor);
+  }
+
+  public static BigDecimal evaluate(String input1, BigDecimal divisor) {
+    return BigDecimal.valueOf(Double.valueOf(input1)).divide(divisor);
   }
 
   public static double evaluate(Double input, String divisor) {
