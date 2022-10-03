@@ -87,6 +87,6 @@ public class Test {
     //  System.out.println(StringtoDateFormatHiveUDF.evaluate("200405","20","yyyyMMdd"));
     // System.out.println(TimeAsString.evaluate(null));
 
-    System.out.println(ConcatColumnHiveUDF.evaluate("Aditya","Column2"));
+    System.out.println(ConcatColumnHiveUDF.evaluate("Aditya", "Column2"));
   }
 }
